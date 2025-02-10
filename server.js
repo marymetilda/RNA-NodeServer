@@ -24,7 +24,7 @@ app.use("/api/v1/auth", require("./routes/userRoutes"));
 app.use("/api/v1/post", require("./routes/postRoutes"));
 
 // HOME
-app.length("/", (req, res) => {
+app.get("/", (req, res) => {
   res.status(200).send({
     success: true,
     message: "Node server running",
